@@ -1,0 +1,13 @@
+This project is aimed at conducting an in-depth analysis of Netflix's extensive catalog of movies and TV shows, sourced from the third-party search engine Flixable. The primary objective is to group these titles into meaningful clusters, which serves the purpose of enhancing user engagement and reducing subscriber turnover for Netflix—a prominent online streaming service with a massive subscriber base of over 220 million users by the second quarter of 2022.
+
+The dataset contains around 7787 records encompassing 11 attributes. To commence the analysis, efforts were directed towards addressing missing data points within the dataset, followed by the execution of exploratory data analysis (EDA) procedures.
+
+The focal point of this clustering endeavor revolves around six key attributes: cast, country, genre, director, rating, and description. To facilitate clustering, the TFIDF vectorizer was leveraged to tokenize, preprocess, and subsequently transform the data in these attributes into vectorized representations.
+
+To tackle the challenge posed by high dimensionality, Principal Component Analysis (PCA) was employed, effectively reducing the feature space while preserving essential information.
+
+By employing a comprehensive array of techniques including the elbow method, silhouette score assessment, dendrogram visualization, and others, two distinct types of clusters were constructed. The K-Means Clustering algorithm was applied for one cluster, while the Agglomerative Hierarchical clustering algorithm was implemented for the other. The determination of the optimal number of clusters was a crucial step in this process.
+
+The generation of a similarity matrix through cosine similarity computation paved the way for the development of a content-based recommender system. This system draws upon the similarities among different titles to provide tailored recommendations to users based on the type of content they have previously consumed. Consequently, users are presented with ten personalized recommendations aligning with their viewing preferences.
+
+In essence, this project delves into the intricate world of Netflix's entertainment offerings, employing advanced techniques to uncover insights and trends that are integral to the landscape of streaming entertainment. The analysis culminates in the creation of distinctive clusters and a sophisticated recommender system, all geared towards enriching the streaming experience for Netflix's diverse audience
